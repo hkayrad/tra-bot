@@ -8,11 +8,11 @@
 
     > Removes every role given to a user and gives it **🤵🏿Vatandaş** role.
 
--   [ ] !kick
+-   [x] !kick
 
     > Kicks the mentioned user.
 
--   [ ] !ban
+-   [x] !ban
 
     > Bans the mentioned user.
 
