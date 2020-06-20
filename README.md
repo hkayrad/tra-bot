@@ -48,6 +48,10 @@ If you want commands other than current ones, you can make a pull request and ad
 
     > Bans the mentioned user.
 
+-   [x] !clear
+
+    > Clears the written amount of message.
+
 ## You must open a config.json to use the bot.
 
 ### config.json structure
