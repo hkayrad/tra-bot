@@ -17,6 +17,7 @@ If you want commands other than current ones, you can make a pull request and ad
 
 ## Completed commands
 
+-   !help
 -   !vatandas
 -   !kick
 -   !ban
