@@ -49,28 +49,35 @@ client.on("message", (message) => {
 				client.commands.get("vatandas").vatandas(message, args);
 			} catch (error) {
 				console.log(error);
-				message.reply("There was an error while trying to clear messages in this channel! Please check the console for error log!")
+				message.reply("There was an error while trying to clear messages in this channel! Please check the console for error log!");
 			}
 		} else if (command == "kick") {
 			try {
 				client.commands.get("kick").kick(message, args);
 			} catch (error) {
 				console.log(error);
-				message.reply("There was an error while trying to kick the user! Please check the console for error log!")
+				message.reply("There was an error while trying to kick the user! Please check the console for error log!");
 			}
 		} else if (command == "ban") {
 			try {
 				client.commands.get("ban").ban(message, args);
 			} catch (error) {
 				console.log(error);
-				message.reply("There was an error while trying to ban the user! Please check the console for error log!")
+				message.reply("There was an error while trying to ban the user! Please check the console for error log!");
 			}
 		} else if (command == "clear") {
 			try {
 				client.commands.get("clear").clear(message, args);
 			} catch (error) {
 				console.log(error);
-				message.reply("There was an error while trying to delete messages! Please check the console for error log!")
+				message.reply("There was an error while trying to delete messages! Please check the console for error log!");
+			}
+		} else if (command == "help") {
+			try {
+				client.commands.get("help").help(message);
+			} catch (error) {
+				console.log(error);
+				message.reply("There was an error while trying to print out help menu! Please check the console for error log!");
 			}
 		}
 	}
