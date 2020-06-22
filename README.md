@@ -4,6 +4,24 @@
 
 If you want commands other than current ones, you can make a pull request and add those commands or make an issue as request! I'll add those to source code.
 
+## You must open a config.json to use the bot.
+
+### config.json structure
+
+```json
+{
+	"prefix": "[desired prefix]",
+	"token": "[your discord bot token]"
+}
+```
+
+## Completed commands
+
+-   !vatandas
+-   !kick
+-   !ban
+-   !clear
+
 ## How to commit to this repository
 
 | Emoji                       | What it Means                              |
@@ -33,32 +51,3 @@ If you want commands other than current ones, you can make a pull request and ad
 | :goal_net:                  | Cathing errors                             |
 | :dizzy:                     | Adding or updating animations              |
 | :construction_worker:       | Adding or updating CI build system         |
-
-## Completed commands
-
--   [x] !vatandas
-
-    > Removes every role given to a user and gives it **🤵🏿Vatandaş** role.
-
--   [x] !kick
-
-    > Kicks the mentioned user.
-
--   [x] !ban
-
-    > Bans the mentioned user.
-
--   [x] !clear
-
-    > Clears the written amount of message.
-
-## You must open a config.json to use the bot.
-
-### config.json structure
-
-```json
-{
-	"prefix": "[desired prefix]",
-	"token": "[your discord bot token]"
-}
-```

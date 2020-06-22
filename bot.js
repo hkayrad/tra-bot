@@ -1,6 +1,9 @@
 // Importing requirements
 const Discord = require("discord.js");
-const { prefix, token } = require("./config.json");
+const {
+	prefix,
+	token
+} = require("./config.json");
 
 // Creating client from Discord variable
 const client = new Discord.Client();
@@ -75,8 +78,8 @@ client.on("message", (message) => {
 					member.kick().then((member) => {
 						message.channel.send(
 							":wave:" +
-								member.displayName +
-								" has been kicked from the server!"
+							member.displayName +
+							" has been kicked from the server!"
 						);
 					});
 				}
@@ -96,8 +99,8 @@ client.on("message", (message) => {
 					member.ban().then((member) => {
 						message.channel.send(
 							":wave:" +
-								member.displayName +
-								" has been banned from the server!"
+							member.displayName +
+							" has been banned from the server!"
 						);
 					});
 				}
