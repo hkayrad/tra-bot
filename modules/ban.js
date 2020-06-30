@@ -10,6 +10,7 @@ module.exports = {
         } else {
             // Parse the mentioned user
             let member = message.mentions.members.first();
+            let userName = member.displayName;
 
             // Kick the mentioned user
             if (member) {
@@ -21,9 +22,7 @@ module.exports = {
                     );
                 });
                 message.channel.send(
-                    ":wave:" +
-                    member.displayName +
-                    " has been banned from the server!"
+                    `:wave ${userName} has been banned from the server!`
                 );
                 setTimeout(() => {
                     message.channel.bulkDelete(1, true).catch((err) => {

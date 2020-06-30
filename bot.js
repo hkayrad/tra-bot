@@ -25,8 +25,9 @@ for (const file of commandFiles) {
 client.once("ready", () => {
 	console.log("Ready");
 	client.user.setStatus("online");
-	client.user.setActivity("commmands. (Being developed by Haqua)", {
-		type: "LISTENING",
+	client.user.setActivity("administration to Supremacy Cumhuriyeti (Being developed by Falcon#7147)", {
+		type: "STREAMING",
+		url: "https://www.twitch.tv/falconhk"
 	});
 });
 

@@ -14,6 +14,7 @@ module.exports = {
             );
             // Find the user
             let user = message.mentions.users.first();
+            let userName = user.displayName;
 
             if (user) {
                 // Find the member in the server
@@ -22,12 +23,15 @@ module.exports = {
                 // Is user in the server
                 if (member) {
                     member.roles.set([vatandas]);
-                    message.channel.bulkDelete(1, true).catch((err) => {
-                        console.log(err);
-                        message.channel.send(
-                            "There was an error while trying to clear messages in this channel! Please check the console for error log!"
-                        );
-                    });
+                    message.channel.send(`${userName} has been promoted to 🤵🏿Vatandaş`);
+                    setTimeout(() => {
+                        message.channel.bulkDelete(2, true).catch((err) => {
+                            console.log(err);
+                            message.channel.send(
+                                "There was an error while trying to clear messages in this channel! Please check the console for error log!"
+                            );
+                        });
+                    }, 5000);
                 } else {
                     //If not
                     message.channel.send(
