@@ -80,6 +80,13 @@ client.on("message", (message) => {
 				console.log(error);
 				message.reply("There was an error while trying to print out help menu! Please check the console for error log!");
 			}
+		} else if (command == "yıldız") {
+			try {
+				client.command.get("yıldız").help(message);
+			} catch (error) {
+				console.log(error);
+				message.reply("There was an error while calling Burcu mal!");
+			}
 		}
 	}
 });
