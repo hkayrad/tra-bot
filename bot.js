@@ -82,7 +82,7 @@ client.on("message", (message) => {
 			}
 		} else if (command == "yıldız") {
 			try {
-				client.command.get("yıldız").help(message);
+				client.command.get("yildiz").yıldız(message);
 			} catch (error) {
 				console.log(error);
 				message.reply("There was an error while calling Burcu mal!");
