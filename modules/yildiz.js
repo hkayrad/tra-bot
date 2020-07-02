@@ -1,7 +1,7 @@
 module.exports = {
     name: "yıldız",
     description: "Mal Burcu",
-    yildiz(message) {
+    yıldız(message) {
         message.channel.send("Mal Burcu");
     }
 }
