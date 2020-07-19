@@ -1,3 +1,5 @@
+# THIS PROJECT HAS BEEN SUSPENDED FOR AN UNKNOWN TIME
+
 # This is a bot for [Supremacy Cumhuriyeti](discord.gg/HcCTmGu) Discord server
 
 **I'll be updating this bot once in a while. Make sure to check from time to time**
